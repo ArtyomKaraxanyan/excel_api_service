@@ -18,7 +18,7 @@
                                             <input type="file" class="form-control @error('file') is-invalid @enderror"
                                                    id="file" name="file"  placeholder="{{__('File')}}"
                                                    value="{{old('file')}}">
-                                            @error('image')
+                                            @error('file')
                                             <div class="invalid-feedback d-block">{{ $message }}</div>
                                             @enderror
                                         </div>

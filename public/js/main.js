@@ -4,7 +4,7 @@ $(document).on('click','.process',function (e) {
     let url=$('.form-process').attr('action')
     var CSRF_TOKEN = document.querySelector('meta[name="csrf-token"]').getAttribute("content");
     loading();
-
+    $('.process-content').html('')
     if($('#file').get(0).files.length>0){
         let file=$('#file')[0].files[0];
         let FileSend = new FormData();
